@@ -76,3 +76,55 @@ fun ReplyAppCompactPreview() {
         }
     }
 }
+
+@Preview(showBackground = true, widthDp = 700)
+@Composable
+fun ReplyAppMediumPreview() {
+    ReplyTheme {
+        Surface {
+            ReplyApp(windowSize = WindowWidthSizeClass.Medium)
+        }
+    }
+}
+
+@Preview(showBackground = true, widthDp = 1000)
+@Composable
+fun ReplyAppExpandedPreview() {
+    ReplyTheme {
+        Surface {
+            ReplyApp(windowSize = WindowWidthSizeClass.Expanded)
+        }
+    }
+}
+
+@Preview(showBackground = true, widthDp = 700, heightDp = 360)
+@Composable
+fun ReplyAppCompactLandscapePreview() {
+    ReplyTheme {
+        Surface {
+            ReplyApp(
+                windowSize = WindowWidthSizeClass.Compact,
+            )
+        }
+    }
+}
+
+@Preview(showBackground = true, widthDp = 1000, heightDp = 600)
+@Composable
+fun ReplyAppMediumLandscapePreview() {
+    ReplyTheme {
+        Surface {
+            ReplyApp(windowSize = WindowWidthSizeClass.Medium)
+        }
+    }
+}
+
+@Preview(showBackground = true, widthDp = 1200, heightDp = 700)
+@Composable
+fun ReplyAppExpandedLandscapePreview() {
+    ReplyTheme {
+        Surface {
+            ReplyApp(windowSize = WindowWidthSizeClass.Expanded)
+        }
+    }
+}
